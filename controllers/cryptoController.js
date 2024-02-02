@@ -1,9 +1,9 @@
 // controllers/cryptoController.js
 import axios from "axios";
-import { Crypto } from "../models/CryptoSchema.js"; // Change the import statement
+import { Crypto } from "../models/CryptoSchema.js";
 
 export default async function fetchDataAndStoreInDatabase(req, res) {
-  let cryptoDataArray; // Declare cryptoDataArray outside the try block
+  let cryptoDataArray;
 
   try {
     const response = await axios.get("https://api.wazirx.com/api/v2/tickers");
